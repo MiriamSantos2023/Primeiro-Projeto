@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascrip</title>
+
+
+
+    <script>
+
+        var nome = prompt("digite seu nome")
+        var turma = prompt("digite sua turma")
+
+        var nota1 = parseInt(prompt('digite sua nota'))
+        var nota2 = parseInt(prompt("digite a outro nota"))
+        var nota3 = parseInt(prompt("digite a outro nota"))
+        var nota4 = parseInt(prompt("digite a outro nota"))
+
+        var media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        var mostra = ("ola, " + nome + " da turma " + turma + " sua media é " + media.toFixed(2))
+    </script>
+</head>
+
+<body>
+
+    <h2 id="mostrar"></h2>
+    <script>
+        document.getElementById("mostrar").innerHTML = mostra
+    </script>
+</body>
+
+</html>
